@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "HaggerNews.js",
+  "version": "1.0",
+
+  "description": "Improves Hacker News comments",
+
+  "author": "Arlan Jaska",
+
+  "icons": { "16": "news16.png",
+  			 "48": "news48.png",
+  			"128": "news128.png" },
+
+  "content_scripts": [{"matches": ["https://news.ycombinator.com/*"], "js": ["haggernews.js"], "run_at": "document_end"}],
+  "permissions": ["https://news.ycombinator.com/*"]
+}
